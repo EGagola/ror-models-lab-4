@@ -1,0 +1,10 @@
+<h1>Here are our lovely dishes</h1>
+<% @dish.each do |dishes| %>
+  <div class="main">
+    <div class="post">
+      <h2><a href="/chef/<%= dishes.id %>"><%= dishes.name %></a></h2>
+      <p><%= dishes.rating %>/10</p>
+      <p>Vegetarian: <%= dishes.vegetarian %></p>
+    </div>
+  </div>
+<% end %>

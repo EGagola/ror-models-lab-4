@@ -1,0 +1,21 @@
+<br>
+<div id="main" class="align">
+  <form class="" action="/<%= @chef.id %>" method="post">
+    <div class="titleform">
+      <label>Title:</label>
+      <input type="text" name="name" value="<%= @chef.name %>"><br>
+    </div>
+    <br>
+    <div class="authorform">
+      <label>Author:</label>
+      <input type="text" name="age" value="<%= @chef.age %>"><br>
+    </div>
+    <br>
+    <div class="">
+      <% if(@chef.id) %>
+        <input type="hidden" name="_method" value="put">
+      <% end %>
+      <input type="submit" value="Save Post">
+  </div>
+  </form>
+</div>

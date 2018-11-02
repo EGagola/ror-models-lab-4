@@ -1,0 +1,9 @@
+<h1>Here are our lovely chefs</h1>
+<% @chef.each do |chefs| %>
+  <div class="main">
+    <div class="post">
+      <h2><a href="/chef/<%= chefs.id %>"><%= chefs.name %></a></h2>
+      <p><%= chefs.age %></p>
+    </div>
+  </div>
+<% end %>
